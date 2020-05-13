@@ -64,6 +64,12 @@
         "prerequisites": ["numbers", "conditionals"]
       },
       {
+        "slug": "method-overloading",
+        "uuid": "3f728065-98d8-472a-a84c-290f05ab1e58",
+        "concepts": ["method-overloading"],
+        "prerequisites": ["classes"]
+      },
+      {
         "slug": "numbers",
         "uuid": "93fbc7cf-3a7e-4450-ad22-e30129c36bb9",
         "concepts": ["numbers", "conditionals"],

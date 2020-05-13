@@ -66,8 +66,12 @@
       {
         "slug": "method-overloading",
         "uuid": "3f728065-98d8-472a-a84c-290f05ab1e58",
-        "concepts": ["method-overloading"],
-        "prerequisites": ["classes"]
+        "concepts": [
+          "method-overloading",
+          "optional-parameters",
+          "named-arguments"
+        ],
+        "prerequisites": ["classes", "constructors"]
       },
       {
         "slug": "numbers",

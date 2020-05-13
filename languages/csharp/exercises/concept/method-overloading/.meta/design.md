@@ -2,36 +2,36 @@
 
 ## Goal
 
-The goal of this exercise is to teach the student the Concept of Inheritance in C#.
+The goal of this exercise is to teach the student the Concept of Method Overloading in C#.
 
 ## Learning objectives
 
-- Know what inheritance is.
-- Know how to inherit from a class.
-- Know that all types inherit from `object`.
-- Know what abstract and sealed classes are.
-- Know what abstract and virtual methods are.
-- Know how to override methods.
-- Know about the `protected` visibility modifier.
+- Know what method overloading is.
+- Know how to define overloaded methods.
+- Know the limitations of method overloading.
+- Know how to define optional parameters.
+- Know how to pass named arguments.
 
 ## Out of scope
 
-- Extending types through extension methods.
+- Overload resolution.
 
 ## Concepts
 
 This Concepts Exercise's Concepts are:
 
-- `inheritance`: know what inheritance is; know how to inherit from a class; know that all types inherit from `object`; know what abstract and sealed classes are; know what abstract and virtual methods are; know how to override methods; know about the `protected` visibility modifier.
+This Concepts Exercise's Concepts are:
+
+- `method-overloading`: know what method overloading is; know how to define overloaded methods; know the limitations of method overloading.
+- `optional-parameters`: know how to define optional parameters.
+- `named-arguments`: know how to use named arguments.
 
 ## Prequisites
 
 This Concept Exercise's prerequisites Concepts are:
 
-- `constructors`: know how to work with constructors.
-- `strings`: know how to do basic string interpolation.
-- `numbers`: know how to compare numbers.
-- `conditionals`: know how to do conditional logic.
+- `classes`: know how to define methods on classes.
+- `constructors`: know how to define constructors on classes.
 
 ## Representer
 

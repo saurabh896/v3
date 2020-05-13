@@ -1,42 +1,21 @@
-using System;
-
-abstract class Character
+class Character
 {
-    public void Attack(Character target)
-    {
-        throw new NotImplementedException("Please implement the Character.Attack() method");
-    }
-
-    public bool Stunned()
-    {
-        throw new NotImplementedException("Please implement the Character.Stunned() method");
-    }
-
-    protected abstract int Damage();
+    public string Name { get; set; }
+    public int Level { get; set; }
+    public int HitPoints { get; set; }
 }
 
-class Wizard : Character
+class Destination
 {
-    protected override int Damage()
-    {
-        throw new NotImplementedException("Please implement the Wizard.Damage() method");
-    }
-
-    public void PrepareSpell()
-    {
-        throw new NotImplementedException("Please implement the Wizard.PrepareSpell() method");
-    }
+    public string Name { get; set; }
+    public int Inhabitants { get; set; }
 }
 
-class Warrior : Character
+class Game
 {
-    protected override int Damage()
-    {
-        throw new NotImplementedException("Please implement the Warrior.Damage() method");
-    }
+    // TODO: define the 'Describe()' method to describe a 'Character'
 
-    public void DrinkPotion()
-    {
-        throw new NotImplementedException("Please implement the Warrior.DrinkPotion() method");
-    }
+    // TODO: define the 'Describe()' method to describe a 'Location'
+
+    // TODO: define the 'Describe()' method to describe a 'Character' travelling to a `Destination`
 }

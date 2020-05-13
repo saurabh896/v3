@@ -1,81 +1,30 @@
-abstract class Character
+class Character
 {
-    private int _hitPoints;
-
-    protected Character(int hitPoints)
-    {
-        _hitPoints = hitPoints;
-    }
-
-    protected abstract int Damage();
-
-    public void Attack(Character target)
-    {
-        if (Stunned())
-        {
-            return;
-        }
-
-        target._hitPoints -= Damage();
-    }
-
-    public bool Stunned()
-    {
-        return _hitPoints <= 0;
-    }
-
-    public override string ToString()
-    {
-        return $"HP: {_hitPoints}";
-    }
+    public string Name { get; set; }
+    public int Level { get; set; }
+    public int HitPoints { get; set; }
 }
 
-class Wizard : Character
+class Destination
 {
-    private bool spellPrepared;
-
-    public Wizard() : base(20)
-    {
-    }
-
-    public void PrepareSpell()
-    {
-        spellPrepared = true;
-    }
-
-    protected override int Damage()
-    {
-        if (spellPrepared)
-        {
-            spellPrepared = false;
-            return 12;
-        }
-
-        return 3;
-    }
+    public string Name { get; set; }
+    public int Inhabitants { get; set; }
 }
 
-class Warrior : Character
+class Game
 {
-    private bool potionDrunk;
-
-    public Warrior() : base(30)
+    public static string Describe(Character character)
     {
+        return $"You're {character.Name}, a level {character.Level} character with {character.HitPoints} hit points.";
     }
 
-    public void DrinkPotion()
+    public static string Describe(Destination destination)
     {
-        potionDrunk = true;
+        return $"You've arrived at {destination.Name}, which has {destination.Inhabitants} inhabitants.";
     }
 
-    protected override int Damage()
+    public static string Describe(Character character, Destination destination)
     {
-        if (potionDrunk)
-        {
-            potionDrunk = false;
-            return 10;
-        }
-
-        return 6;
+        return $"{Describe(character)} Having rested a bit, you travel to your next destination. {Describe(destination)}";
     }
 }

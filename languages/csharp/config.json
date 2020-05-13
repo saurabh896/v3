@@ -71,7 +71,13 @@
           "optional-parameters",
           "named-arguments"
         ],
-        "prerequisites": ["classes", "constructors"]
+        "prerequisites": [
+          "classes",
+          "constructors",
+          "properties",
+          "enums",
+          "strings"
+        ]
       },
       {
         "slug": "numbers",

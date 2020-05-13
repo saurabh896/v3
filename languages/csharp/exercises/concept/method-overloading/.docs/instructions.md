@@ -18,84 +18,10 @@ Drinking a potion (warrior) or preparing a spell (wizard) only makes the next at
 
 You have six tasks that work with warriors and wizard characters.
 
-### 1. Display the hit points
+### 1. Describe warrior
 
-Override the `ToString()` method on the `Character` class to display the number of hit points of a character:
-
-```csharp
-var warrior = new Warrior();
-warrior.ToString();
-// => "HP: 30"
-```
-
-### 2. Allow attacking a character using a basic attack
-
-Implement the `Warrior.Damage()` and `Wizard.Damage()` methods to return the damage done by their character type's basic attack. Next, implement the `Character.Attack()` method that takes the character to attack as its parameter and decrease the attacked character's hit points with the attacking character's damage.
+TODO
 
 ```csharp
-var warrior = new Warrior();
-var wizard = new Wizard();
-wizard.Attack(warrior);
-warrior.ToString();
-// => "HP: 27"
-```
-
-### 3. Allow wizards to use their special attack
-
-Implement the `Wizard.PrepareSpell()` method to allow a wizard to prepare their spell in advance, making their next attack a special attack. Update the `Wizard.Damage()` method to return the special attack damage if a spell has been prepared.
-
-```csharp
-var warrior = new Warrior();
-var wizard = new Wizard();
-
-wizard.PrepareSpell();
-wizard.Attack(warrior);
-warrior.ToString();
-// => "HP: 18"
-```
-
-### 4. Allow warriors to use their special attack
-
-Implement the `Warrior.DrinkPotion()` method to allow a warrior to drink their potion, making their next attack a special attack. Update the `Warrior.Damage()` method to return the special attack damage if a potion has been drunk.
-
-```csharp
-var warrior = new Warrior();
-var wizard = new Wizard();
-
-warrior.DrinkPotion();
-warrior.Attack(wizard);
-wizard.ToString();
-// => "HP: 10"
-```
-
-### 5. Check for stunned characters
-
-Implement the `Character.Stunned()` method to return `true` if the character's hit points are less than or equal to zero:
-
-```csharp
-var warrior = new Warrior();
-var wizard = new Wizard();
-warrior.Attack(wizard);
-warrior.Attack(wizard);
-warrior.Attack(wizard);
-warrior.Attack(wizard);
-wizard.Stunned();
-// => true
-```
-
-### 6. Stunned characters cannot do damage
-
-Update the `Character.Attack()` method so that a stunned character cannot cause damage:
-
-```csharp
-var warrior = new Warrior();
-var wizard = new Wizard();
-warrior.Attack(wizard);
-warrior.Attack(wizard);
-warrior.Attack(wizard);
-warrior.Attack(wizard);
-
-wizard.Attack(warrior);
-warrior.ToString();
-// => "HP: 30"
+TODO
 ```
